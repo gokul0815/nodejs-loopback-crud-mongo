@@ -1,0 +1,34 @@
+Received aadhaar data {"uid":"269879140098","pincode":"638115","name":"Gokul K","id":129,"yob":"1995","instance":{"id":"5ac3181c244fdc32c77a9b29","callbackUrl":"http://www.randomurl.url/"}}
+91|aadhaar | aadhaarRequest  { url: 'http://13.127.143.241:8182/auth/raw',
+91|aadhaar |   headers: { 'Content-Type': 'application/json' },
+91|aadhaar |   body: '{"aadhaar-id":"269879140098","consent":"Y","modality":"demo","certificate-type":"prod","demographics":{"name":{"matching-strategy":"partial","matching-value":"50","name-value":"Gokul K"},"dob":{"format":"YYYY","dob-value":"1995"}}}' }
+91|aadhaar | Begun sending verification request for aadhar
+91|aadhaar | Received response from Aadhaar gateway {"statusCode":200,"body":"{\"success\":false,\"aua-status-code\":\"500\"}","headers":{"date":"Tue, 03 Apr 2018 05:58:53 GMT","content-type":"text/plain","connection":"close","server":"Jetty(9.2.z-SNAPSHOT)"},"request":{"uri":{"protocol":"http:","slashes":true,"auth":null,"host":"13.127.143.241:8182","port":"8182","hostname":"13.127.143.241","hash":null,"search":null,"query":null,"pathname":"/auth/raw","path":"/auth/raw","href":"http://13.127.143.241:8182/auth/raw"},"method":"POST","headers":{"Content-Type":"application/json","content-length":231}}}
+91|aadhaar | **************
+91|aadhaar | { success: false, 'aua-status-code': '500' } 'object'
+91|aadhaar | **************
+91|aadhaar | posting this data { output: 
+91|aadhaar |    { verified: false,
+91|aadhaar |      message: 'Verification complete with negative results.',
+91|aadhaar |      aadhaarReferenceCode: '' },
+91|aadhaar |   instanceId: '5ac3181c244fdc32c77a9b29' }
+91|aadhaar | Error got on posting to the required url { Error: getaddrinfo ENOTFOUND www.randomurl.url www.randomurl.url:80
+91|aadhaar |     at errnoException (dns.js:28:10)
+91|aadhaar |     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+91|aadhaar |   cause: 
+91|aadhaar |    { Error: getaddrinfo ENOTFOUND www.randomurl.url www.randomurl.url:80
+91|aadhaar |        at errnoException (dns.js:28:10)
+91|aadhaar |        at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+91|aadhaar |      code: 'ENOTFOUND',
+91|aadhaar |      errno: 'ENOTFOUND',
+91|aadhaar |      syscall: 'getaddrinfo',
+91|aadhaar |      hostname: 'www.randomurl.url',
+91|aadhaar |      host: 'www.randomurl.url',
+91|aadhaar |      port: 80 },
+91|aadhaar |   isOperational: true,
+91|aadhaar |   code: 'ENOTFOUND',
+91|aadhaar |   errno: 'ENOTFOUND',
+91|aadhaar |   syscall: 'getaddrinfo',
+91|aadhaar |   hostname: 'www.randomurl.url',
+91|aadhaar |   host: 'www.randomurl.url',
+91|aadhaar |   port: 80 }

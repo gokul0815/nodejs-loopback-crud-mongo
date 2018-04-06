@@ -1,0 +1,28 @@
+{
+  "name": "add",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "school_name": {
+      "type": "string",
+      "required": true
+    },
+    "management": {
+      "type": "string",
+      "required": true
+    },
+    "Pincode": {
+      "type": "string"
+    },
+    "DDPI_email": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
